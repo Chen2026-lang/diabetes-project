@@ -15,6 +15,13 @@
 本项目基于 Spark MLlib 构建分布式机器学习模型，对居民慢病风险进行预测与评估，验证大数据技术在医疗健康场景中的应用价值。
 
 ---
+## 数据集概况 (Dataset Description)
+
+本项目基于 BRFSS (Behavioral Risk Factor Surveillance System) 健康调查数据集，涵盖约 25 万条居民健康记录。
+
+- **目标变量**: `Diabetes_012`（0-无，1-糖尿病前期，2-糖尿病）。
+- **关键特征**: BMI（身体质量指数）、HighBP（高血压）、HighChol（高胆固醇）、Smoker（吸烟史）、PhysActivity（运动频率）等。
+- **特征清洗**: 针对 MentHlth、PhysHlth 等冗余指标进行了共线性分析与剔除处理。
 
 ## 技术栈
 
